@@ -3,7 +3,7 @@ import React, { useCallback } from "react";
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 export default function PokeAPIHome() {
-  const handleStorePress = useCallback(() => {
+  const handlePress = useCallback(() => {
     router.push(`/(tabs)/explore`)
   }, []);
 
@@ -21,7 +21,7 @@ export default function PokeAPIHome() {
           El nombre completo en japonés es "Pocket Monsters" (ポケットモンスター), pero se abrevió como Pokémon (ポケモン).
         </Text>
         <Button
-          onPress={handleStorePress}
+          onPress={handlePress}
           title="Pokemones"
         />
       </View>
